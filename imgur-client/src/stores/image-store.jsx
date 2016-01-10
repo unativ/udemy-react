@@ -12,6 +12,6 @@ module.exports = Reflux.createStore({
     }.bind(this))
   },
   triggerChange: function() {
-    this.triggerChange('change', this.images);
+    this.trigger('change', this.images);
   }
 });
